@@ -6,7 +6,7 @@ A distributed web application providing Wikipedia search with MySQL caching, bui
 
 ## Architecture
 
-![Architecture](architecture.svg)
+![Architecture](distrubuted_app_architecture.png)
 
 ---
 
