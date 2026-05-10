@@ -6,8 +6,16 @@
 A three-tier distributed web application that provides Wikipedia search functionality with MySQL-based caching, deployed across a local Ubuntu VM, an AWS EC2 instance, and a Dockerised database container.
 
 ## Architecture
-
-![Architecture](distributed_app_architecture.png)
+```
+User Browser
+     │
+Flask App (Ubuntu VM, port 5000)
+     │                    │
+SSH via Paramiko     MySQL 8.0 (Docker, port 7888)
+     │
+AWS EC2 t4g.micro
+(wiki.py / Wikipedia API)
+```
 
 ## Components
 - **Flask** — web server handling search requests and cache logic
