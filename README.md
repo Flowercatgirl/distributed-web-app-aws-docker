@@ -1,4 +1,4 @@
-# distributed-web-app-aws-docker — Three-Tier Distributed Application
+# Wikipedia Search Assistant — Flask · AWS EC2 · Docker
 
 A distributed web application providing Wikipedia search with MySQL caching, built across three environments: a local Ubuntu VM running Flask, an AWS EC2 instance executing Wikipedia queries, and a Dockerised MySQL 8.0 container for response caching. Repeat queries return instantly from cache instead of hitting the API.
 
